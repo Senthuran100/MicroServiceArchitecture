@@ -1,7 +1,13 @@
 spring:
   application:
     name: Server
-
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/restaurant
+    username: root
+    password: root
 
 server:
   port: 8072
