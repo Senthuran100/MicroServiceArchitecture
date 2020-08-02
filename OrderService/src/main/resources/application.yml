@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: OrderService
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/orderInfo
+    username: root
+    password: root
+
+
+server:
+  port: 8074
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+  instance:
+    hostname: localhost
