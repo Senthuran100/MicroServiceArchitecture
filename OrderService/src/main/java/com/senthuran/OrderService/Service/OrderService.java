@@ -33,6 +33,10 @@ public class OrderService {
         return orderInfoRepo.findByRestaurantId(restaurantId, pageable);
     }
 
+    public Page<OrderInfo> showOrders( Pageable pageable) {
+        return orderInfoRepo.findAll(pageable);
+    }
+
     public Page<OrderInfo> showOrdersByUser(String userId, Pageable pageable) {
         return orderInfoRepo.findByUserName(userId, pageable);
     }

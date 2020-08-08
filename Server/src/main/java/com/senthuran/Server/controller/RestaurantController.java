@@ -11,6 +11,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
+@RequestMapping("/v1")
 public class RestaurantController {
 
     @Autowired

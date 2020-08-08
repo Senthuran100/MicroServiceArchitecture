@@ -1,13 +1,14 @@
 zuul:
   #Service will be mapped under the /api URI
-  prefix: /api
   routes:
     hello-server:
-      path: /server/**
+      path: /v1/**
       serviceId: SERVER
+      stripPrefix: false
     hello-client:
-      path: /client/**
-      serviceId: CLIENT
+      path: /order/**
+      serviceId: ORDERSERVICE
+      stripPrefix: false
 
 eureka:
   client:
