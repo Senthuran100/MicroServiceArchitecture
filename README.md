@@ -14,3 +14,9 @@ Restaurant Service - It is used for finding the restaurants and the items that a
 Order service - It is used to order item from the restaurant and track the orders.
 
 Please refer the below diagram for more information.
+
+<img src="https://github.com/Senthuran100/MicroServiceArchitecture/blob/master/images/ZUUL_Eureka.jpeg"/>
+
+Please refer the postman request of how we are calling the microservice. Here we have used ZUUL proxy(http://localhost:8079) to fire the request. 
+<img src="https://github.com/Senthuran100/MicroServiceArchitecture/blob/master/images/Screen%20Shot%202020-08-08%20at%204.38.00%20PM.png"/>
+<img src="https://github.com/Senthuran100/MicroServiceArchitecture/blob/master/images/Screen%20Shot%202020-08-08%20at%204.38.20%20PM.png"/>
